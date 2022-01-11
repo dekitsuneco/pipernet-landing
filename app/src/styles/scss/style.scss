@@ -182,13 +182,50 @@ body {
   }
   
   .team {
-    &__title {}
-      &__row {}
+    padding: 48px 0px 122px 0;
+
+
+    background: rgba(238, 238, 238, 1);
+
+    &__title {
+      margin: 0px 0px 56px 0;
+    }
+      &__row {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
         &__card {
+          flex: 0 1 calc(100% / 3);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          margin: 0px 0px 82px 0;
+
           .profile {
-            &__img {}
-            &__name {}
-            &__position {}
+            &__img {
+              flex: 0 1 168px;
+
+              margin: 0px 0px 12px;
+
+              img {
+                max-width: 100%;
+              }
+            }
+            &__name {
+              font-size: 24px;
+              font-weight: 700;
+              line-height: 28px;
+              text-align: center;
+              color: rgba(0, 119, 101, 1);
+            }
+            &__position {
+              font-size: 18px;
+              font-style: italic;
+              line-height: 21px;
+              text-align: center;
+            }
           }
         }
   }
