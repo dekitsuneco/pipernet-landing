@@ -1,1 +1,114 @@
 @import './nullify.scss';
+
+/* | COMMON */
+.container {
+  max-width: 1110px;
+
+  margin: 0 auto;
+}
+
+.column {}
+.row {}
+
+/* | UNIVERSAL */
+body {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* MAIN CONTENT */
+/* | TOP */
+.header {
+  background: rgba(0, 119, 101, 1);
+
+  &__row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 19px 0;
+
+    .logo {
+      &__img {
+        flex: 0 1 184px;
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+    
+    .nav {
+      &__list {
+        display: flex;
+        flex-wrap: wrap;
+
+
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.75rem;
+        text-align: center;
+        color: rgb(255, 255, 255);
+
+        li {
+          padding: 0 8px 0 0;
+
+          &:not(:last-child)::after {
+            content: '|';
+            padding-left: 8px;
+          }
+
+          a {
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+/* | MIDDLE */
+.content {
+  .hero-1 {
+    &__row {}
+      &__info {}
+  }
+  
+  .problem {
+    &__row {}
+      &__column {}
+        &__title {}
+        &__text {}
+  }
+  
+  .hero-2 {
+    &__row {}
+      &__info {}
+  }
+  
+  .introduction {
+    &__row {}
+      &__column {}
+        &__title {}
+        &__logo {}
+        &__text {}
+  }
+  
+  .team {
+    &__title {}
+      &__row {}
+        &__card {
+          .profile {
+            &__img {}
+            &__name {}
+            &__position {}
+          }
+        }
+  }
+}
+
+/* | BOTTOM */
+.footer {
+  &__row {}
+    &__text {}
+}
