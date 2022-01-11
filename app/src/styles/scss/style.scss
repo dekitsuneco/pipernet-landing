@@ -152,7 +152,7 @@ body {
   }
   
   .introduction {
-    padding: 48px 92px 0;
+    padding: 48px 0px 92px 0;
 
     &__row {
       display: flex;
@@ -214,16 +214,16 @@ body {
               }
             }
             &__name {
-              font-size: 24px;
+              font-size: 1.5rem;
               font-weight: 700;
-              line-height: 28px;
+              line-height: 1.75rem;
               text-align: center;
               color: rgba(0, 119, 101, 1);
             }
             &__position {
-              font-size: 18px;
+              font-size: 1.125rem;
               font-style: italic;
-              line-height: 21px;
+              line-height: 1.2125rem;
               text-align: center;
             }
           }
@@ -233,6 +233,21 @@ body {
 
 /* | BOTTOM */
 .footer {
-  &__row {}
-    &__text {}
+  background: rgba(51, 51, 51, 1);
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    &__text {
+      margin: 48px 0 64px 0;
+
+      max-width: 540px;
+
+      font-size: 1.125rem;
+      line-height: 1.3125rem;
+      text-align: center;
+      color: rgba(255, 255, 255, 1);
+    }
 }
